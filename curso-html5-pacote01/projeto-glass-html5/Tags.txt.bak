@@ -1,0 +1,61 @@
+&nbsp (espaco em branco)
+</br></br> (quebra de linhas dentro de palavras)
+<p></p>(paragrafo)
+<wbr/>(quebra de palavras)
+&shy(hifenização rapida)
+<b></b>(negrito)
+<i></i>(italico)
+<del></del>(risca palavra)
+ <span style="text-decoration: underline;"></span>(sublinhado)
+ <span style="font-weight:100,normal, bold, bolder;"(negrito)
+<style="text-aling: justify";(justificado)
+<sup>(texto acima de outro)</sup>
+<sub>(texto abaixo de outro)</sub>
+background-color: rgba(0,0,0,1); (padrão rbg)
+					hsla(0,0%,0%,1) (matriz, saturação e luminosidade)
+					url("diretorio da imagem".formato
+<img src="diretoriodaimgam.formato"/> (origme da imagem)
+<figure></figure>() significado semantico para imgens
+<figcaption></figcaption> (legendas para imagens )
+
+<h1>Simbolos especiais
+<p>
+&lt;
+&gt;
+&le;
+&ge;<br/>
+
+&pound;
+&yen;
+&euro;,<br/>
+
+&copy;
+&reg;
+&trade;<br/>
+
+&permil;
+&sum;
+&infin;
+&times;
+&plusmn;
+&oplus;
+&radic;
+&ne;<br/>
+
+&delta;
+&Delta;
+&lambda;
+&phi;<br/>
+
+&Larr;
+&rarr;
+&uarr;
+&darr;<br/>
+
+&spades;
+&clubs;
+&hearts;
+&diams;
+
+
+</h1>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Tudo sobre Google Glass</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/form.css"/>
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<script>
+	function calc_total(){
+		var qtd=parseInt(document.getElementById('quantidade2').value);
+		tot= qtd*1500;
+		document.getElementById('preco2').value=tot;
+	}
+</script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+		<hgroup>
+			<h1>Google Glass</h1>
+			<h2>A revolução do Google está chegando</h2>
+		</hgroup>
+
+			<img id="icone"src="_imagens/contato.png"/>
+
+		<nav id="menu">
+			<h1>Menu Principal</h1>
+			<ul type="disc">
+				<li onmouseover="mudafoto('_imagens/home.png')"onmouseout="mudafoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+				<li class="especificacoes" onmouseover="mudafoto('_imagens/especificacoes.png')"onmouseout="mudafoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+				<li onmouseover="mudafoto('_imagens/fotos.png')"onmouseout="mudafoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+				<li onmouseover="mudafoto('_imagens/multimidia.png')"onmouseout="mudafoto('_imagens/contato.png')"><a href="multimidia.html" >Multimídia</a></li>
+				<li onmouseover="mudafoto('_imagens/contato.png')"onmouseout="mudafoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="corpo-full">
+		<article id="noticia-principal">
+			<header id="cabecalho-de-artigo">
+				<hgroup>
+					<h3>Fale conosco>Contato </h3>
+					<h1>Formulário de contato</h1>
+					<h2>por Fabio Santos</h2>
+					<h3 class="direita">Atualizado em 04/Janeiro/2022</h3>
+				</hgroup>
+			</header>
+		<form method="post" id="fcontato" action="mailto..fabio98santos@hotmail.com" oninput="calc_total();">
+			<fieldset id="usuario">
+				<legend>Identificação do Usuário</legend>
+				<p><label for="nome2">Nome:</label>
+					<input type="text" name="nome1" id="nome2" size="20" maxlength="30" placeholder="Nome completo"/></p>
+					
+				<p><label for="senha2">Senha:</label>
+					<input type="password" name="senha1" id="senha2" size="20" maxlength="20" placeholder="8 Dígitos"/></p>
+					
+				<p><label for="email2">E-mail</label>:
+					<input type="email" name="email1" id="email2" size="20" placeholder="@email.com"/></p>
+					
+					<fieldset id="sexo"><legend>Sexo:</legend>
+						<input type="radio" name="sexo1" id="sexomasc" checked/><label for="sexomasc">Masculino</label><br/>
+						<input type="radio" name="sexo1" id="sexofem"/><label for="sexofem">Feminino</label>
+					</fieldset>
+					
+				<p><label for="date2">Data de Nascimento:</label>
+					<input/ type="date" name="date1" id="date2"></p>
+			</fieldset>
+
+			<fieldset id="endereco">
+				<legend>Endereço do Usuário</legend>
+				<p><label for="rua2">Logradouro:</label>
+					<input type="text" name="rua1" id="rua2" size="20" placeholder="Av, rua, travessa, etc"/></p>
+				
+				<p><label for="numero2">Número:</label>
+					<input type="number" name="numero1" id="numero2" min="1" max="99999" placeholder="Ex:123"/>&nbsp &nbsp <label for="sn2">S/N:</label>
+						<input type="radio" name="sn1" id="sn2"/></p>
+				
+				<p><label for="cidade2">Cidade:</label>
+					<input type="text" name="cidade1" id="cidade2" size="20"
+					maxlength="30" placeholder="Ex: Montes Claros" list="cidades"/></p>
+					<datalist id="cidades">
+						<option value="Montes Claros"></option>
+						<option value="Pirapora"></option>
+						<option value="Januária"></option>
+						<option value="Janaúba"></option>
+					</datalist>
+					
+				<p><label for="estado2">UF:</label>
+					<select  name="estado1" id="estado2" placeholder="estado">
+						<optgroup label="regiao sudeste">
+							<option value="RJ">Rio de janeiro</option>
+							<option value="SP">São Paulo</option>
+							<option value="MG"selected>Minas Gerais</option>
+						</optgroup>
+						
+						<optgroup label="regiao centro-oeste">
+							<option value="GO">Goiás</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MS">Mato Grosso do sul</option>
+						</optgroup>
+					</select>
+				</p>
+			</fieldset>
+			
+			<fieldset id="mensagem">
+				<legend>Mensagem do Usuário</legend>
+				<p><label for="grau2">Grau de Urgência:</label>
+					&nbsp Min<input type="range" name="grau1" id="grau2" min="0" max="10" step="1"/>Máx</p>
+					
+				<p><label for="mensagem2">Mensagem:</label>
+					<textarea name="mensagem1" id="mensagem2" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+			</fieldset>
+			
+			<fieldset id="pedido">
+				<legend>Quero um Google Glass</legend>
+				<p><input type="checkbox" name="pedido1" id="pedido2" checked/>
+				<label for="pedido2">Gostaria de adquirir um Google Glass quando disponível</label></p>
+				
+				<p><label for="cor2">Cor:</label>
+					<input type="color" name="cor1" id="cor2" value="#0000FF"/></p>
+				
+				<p><label for="quantidade2">Quantidade:</label>
+					<input type="number" name="quantidade1" id="quantidade2" value="0"/></p>
+				
+				<p><label for="preco2">Preço Total: R$</label>
+					<input type="texts" name="preco1" id="preco2" placeholder="Total a pagar" readonly/></p>
+			</fieldset>
+
+			<input type="submit" value="Enviar"/>
+			<input type="image" name="enviar1" id="enviar2" src="_imagens/botao-enviar.png"/>
+			
+		</form>
+		</article>
+	</section>
+		
+
+	<footer id="rodape">
+		<p>Copyright &copy; 2021 - by Fábio Santos</br>
+		<img src="facebook-logo.png"/><a href="https://www.facebook.com/fabio.vinicius.1420354" target="_blank"> Facebook</a>&nbsp |&nbsp<img src="instagram-logo.png"/> <a href="https://www.instagram.com/fabio.s8/" target="_blank">Instagram</a></p>
+	</footer>
+</div>
+</body>
+</html>

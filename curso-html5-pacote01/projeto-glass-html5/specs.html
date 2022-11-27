@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Tudo sobre Google Glass</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/specs.css"/>
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+	<hgroup>
+	<h1>Google Glass</h1>
+	<h2>A revolução do Google está chegando</h2>
+	</hgroup>
+
+	<img id="icone"src="_imagens/especificacoes.png"/>
+
+	<nav id="menu">
+	<h1>Menu Principal</h1>
+	<ul type="disc">
+		<li onmouseover="mudafoto('_imagens/home.png')"onmouseout="mudafoto('_imagens/especificacoes.png')"><a href="index.html">Home</a></li>
+		<li class="especificacoes" onmouseover="mudafoto('_imagens/especificacoes.png')"onmouseout="mudafoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+		<li onmouseover="mudafoto('_imagens/fotos.png')"onmouseout="mudafoto('_imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
+		<li onmouseover="mudafoto('_imagens/multimidia.png')"onmouseout="mudafoto('_imagens/especificacoes.png')"><a href="multimidia.html" >Multimídia</a></li>
+		<li onmouseover="mudafoto('_imagens/contato.png')"onmouseout="mudafoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+	</ul>
+	</nav>
+	</header>
+
+<section id="corpo-full">
+	<article id="noticia=principal">
+		<header id="cabecalho-de-artigo">
+			<hgroup>
+				<h3>Glass > Especificações</h3>
+				<h1>Raio-X no Google Glass</h1>
+				<h2>por Fábio Santos</h2>
+				<h3 class="direita">Atualizado em 14/Dezembro/2021</h3>
+			</hgroup>
+		</header>
+<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+<section id="conteudo">
+	<img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"/>
+	<map name="meumapa">
+		<area shape="poly" coords="183,220,265,208,266,244,185,256" href="google-glass.html#tela" target="janela"/>
+		<area shape="circle" coords="158,243,11" href="google-glass.html#camera" target="janela"/>
+		<area shape="circle" coords="76,51,10" href="google-glass.html#bateria" target="janela"/>
+		<area shape="poly" coords="27,144,82,214,82,251,44,197,27,170," href="google-glass.html#sensores" target="janela"/>
+	</map>
+	<iframe src="google-glass.html" name="janela" id="framespec"></iframe>
+</section>
+</article>
+</section>
+
+<footer id="rodape">
+<p>Copyright &copy; 2021 - by Fábio Santos</br>
+<img src="facebook-logo.png"/><a href="https://www.facebook.com/fabio.vinicius.1420354" target="_blank"> Facebook</a>&nbsp |&nbsp<img src="instagram-logo.png"/> <a href="https://www.instagram.com/fabio.s8/" target="_blank">Instagram</a></p>
+</footer>
+</div>
+</body>
+</html>
