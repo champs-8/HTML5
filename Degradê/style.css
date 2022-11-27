@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+div.alpha{
+    background:linear-gradient(0.025turn, #e089ff, #47bdff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20pt;
+    background-color: black;
+    text-align: center;
+    margin-top: 300px;
+}
