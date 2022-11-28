@@ -72,7 +72,7 @@ previousCard.addEventListener('click', () => {
 //obtendo coordenadas das sections.     TESTES  
 // const coordProj = document.getElementById('projects').getBoundingClientRect();
 // setInterval(() => {
-//     const coord = document.getElementById('hero').getBoundingClientRect();
+//     const coord = document.body.getBoundingClientRect();
 //     console.log(coord.y);
 // }, 100);
 
@@ -83,11 +83,15 @@ const ancoraP = document.getElementById('p');//projetos
 const ancoraM = document.getElementById('m');//mais
 const btnHome = document.getElementById('btnHome');//home para inicio
 const ancoraL = document.getElementById('logo');//logo
+const btnCont = document.getElementById('btnCont');//contato
 
 
 //metodo para mover ate a coordenada desejada
 //fui foraçado a colocar o valor fixo
 //obs: consertar valores todas as vezes que alterar dimensões das divs
+btnCont.addEventListener('click', () => {
+    scroll(0, 2806);
+});
 ancoraP.addEventListener('click', () => {
     scroll(0, 2082);
 });

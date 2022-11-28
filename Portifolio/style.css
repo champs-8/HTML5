@@ -412,6 +412,8 @@ span#spanDesc {
 /* redes sociais do fim */
 .contact {
     padding-bottom: 0;
+    min-height: 100vh;
+    flex-direction: column;
 }
 .socials {
     width: 100%;
@@ -439,11 +441,12 @@ span#spanDesc {
     color:var(--primary);
 
 }
-footer {
+.contact footer {
     justify-content: center;
+    align-items: center;
+    height: 3em;
 }
 footer span {
     font-size: .8em;
-    padding-bottom: .5em;
     color: #c0c0c0
 }
